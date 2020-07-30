@@ -1,6 +1,23 @@
+.jumbotron-fluid {
+    height: 300px;
+    margin-top: 100px;
+}
+
+.container-fluid{
+    margin-bottom: 100px;
+}
+
+.row {
+    padding: 20px;
+}
+
+.section-header {
+    margin-top: 50px;
+}
+
 .container-fluid {
-    background-color: lightblue;
-    height: 100px;
+    /* background-color: lightblue; */
+    height: auto;
 }
 
 .container-sm {
@@ -17,4 +34,47 @@
 
 .container-xl {
     background-color: lightyellow;
+}
+
+#column-1 {
+    /* background: lightslategray; */
+}
+
+#column-2 {
+    /* background: lightgreen; */
+}
+
+#column-3 {
+    /* background: lightcoral; */
+}
+
+.icon {
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+}
+
+.carousel-inner{
+    height: 400px;
+}
+
+.input-group{
+    margin-bottom: 20px;
+}
+
+.input-type {
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.input-type-header {
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.description {
+    font-size: 0.8em;
 }
