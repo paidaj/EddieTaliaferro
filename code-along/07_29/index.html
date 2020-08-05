@@ -136,33 +136,6 @@
 
 
 
-        <!-- Badge -->
-        <div id="badges" class="row">
-            <h1 class="section-header">Badges</h1>
-        </div>
-        <div class="row p-3">
-            <h1>Hello <span class="badge badge-primary mr-5">New</span></h1>
-            <h2>Hello <span class="badge badge-primary mr-5">New</span></h2>
-            <h3>Hello <span class="badge badge-primary mr-5">New</span></h3>
-            <h4>Hello <span class="badge badge-primary mr-5">New</span></h4>
-            <h5>Hello <span class="badge badge-primary mr-5">New</span></h5>
-            <h6>Hello <span class="badge badge-primary mr-5">New</span></h6>
-        </div>
-
-
-        <!-- Breadcrumb -->
-        <div id="breadcrumbs" class="row">
-            <h1 class="section-header">Breadcrumbs</h1>
-        </div>
-        <nav>
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Second</a></li>
-                <li class="breadcrumb-item active"><a href="#">Third</a></li>
-            </ol>
-        </nav>
-
-
         <!-- Button -->
         <div id="buttons" class="row">
             <h1 class="section-header">Button</h1>
@@ -176,47 +149,14 @@
         </div>
 
 
-        <!-- Button Group -->
-        <div id="button-group" role="group" class="row">
-            <h1 class="section-header">Button Group</h1>
-        </div>
-        <div class="row p-3">
-            <div class="btn-group">
-                <button class="btn-primary mr-1" type="button">Left</button>
-                <button class="btn-primary mr-1" type="button">Middle</button>
-                <button class="btn-primary mr-1" type="button">Right</button>
-            </div>
-        </div>
-        <div class="row p-3">
-            <div class="btn-group-vertical">
-                <button class="btn-primary mt-1" type="button">Left</button>
-                <button class="btn-primary mt-1" type="button">Middle</button>
-                <button class="btn-primary mt-1" type="button">Right</button>
-            </div>
-        </div>
-        <div class="row p-3">
-            <div class="btn-group">
-                <button class="btn-primary btn-lg mr-1" type="button">1</button>
-                <button class="btn-primary btn-lg mr-1" type="button">2</button>
-                <button class="btn-primary btn-lg mr-1" type="button">3</button>
-                <button class="btn-primary btn-lg mr-1" type="button">4</button>
-                <button class="btn-primary btn-lg mr-1" type="button">5</button>
-                <button class="btn-primary btn-lg mr-1" type="button">6</button>
-                <button class="btn-primary btn-lg mr-1" type="button">7</button>
-                <button class="btn-primary btn-lg mr-1" type="button">8</button>
-                <button class="btn-primary btn-lg mr-1" type="button">9</button>
-            </div>
-        </div>
-
-
 
         <!-- Cards -->
         <div class="row">
             <h1 class="section-header">Cards</h1>
         </div>
 
-        <div class="row p-2">
-            <div class="col">
+        <div class="row">
+            <div class="col-xs-10 col-sm-6 mb-5">
                 <div class="card" style="width: auto;">
                     <div class="card-header">Card</div>
                     <img src="https://picography.co/wp-content/uploads/2019/06/picography-golden-mountain-sunset-sky-clouds-light-900x600.jpg" class="card-img-top" alt="...">
@@ -227,7 +167,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-xs-10 col-sm-6">
                 <div class="card" style="width: auto;">
                     <div class="card-header">Card</div>
                     <img src="https://traknetsolutions.com/wp-content/uploads/2019/11/detroit-skyline-linda-goodhue-photography.jpg" class="card-img-top" alt="...">
@@ -240,7 +180,41 @@
             </div>
         </div>
 
+        <!-- Modals -->
+        <div id="modal" class="row">
+            <h1 class="section-header">Modals</h1>
+        </div>
+        <div class="col-4">
+            <button type="button" class="btn btn-primary" data-target="#exampleModal" data-toggle="modal">Activate Modal</button>
+        </div>
+        <div class="modal fade" id="exampleModal">
 
+        <!-- 
+            Modal Dialog
+            Modal Content
+            Modal Header > Modal Title & Close Button
+            Modal Body
+            Modal Footer
+         -->
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This is a Modal's body. Information goes in here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>   
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 
 
@@ -294,18 +268,20 @@
 
 
         <!-- Forms -->
-        <div id="form" class="row">
+        <div id="form" class="row px-5">
             <h1 class="section-header">Forms</h1>
         </div>
-        <div class="row input-type">
-            <h6 class="input-type-header">Regular Input</h6>
-            <div class="input-group mb-9">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">1</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        <!-- Regular Input -->
+        <div class="row px-5 input-type">
+            <div class="col-sm-6">
+                <h6 class="input-type-header">Regular Input</h6>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">1</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
                 </div>
-            </div>
-            <div class="input-group mb-9">
+            <div class="input-group">
                 <div class="input-group-append">
                     <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
                     <span class="input-group-text" id="basic-addon1">2</span>
@@ -314,26 +290,33 @@
             <button class="btn btn-success submit">Submit</button>
             <br>
         </div>
-        <div class="row input-type">
-            <h6 class="input-type-header">TextArea</h6>
-            <!-- Textarea -->
-            <textarea class="form-control" rows="10" placeholder="Add message here" aria-label="With textarea"></textarea>
-            <button class="btn btn-success submit">Submit</button>
         </div>
-        <div class="row input-type">
-            <h6 class="input-type-header">Select</h6>
-            <!-- Select -->
-            <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <label class="input-group-text" for="inputGroupSelect01">Topping 1</label>
-                    </div>
-                    <select class="custom-select" id="inputGroupSelect01" placeholder="Pick one option.">
-                        <option selected value="0">Choose...</option>
-                        <option value="1">Bacon</option>
-                        <option value="2">Mushrooms</option>
-                        <option value="3">Tomatoe</option>
-                        <option value="4">Cheese</option>
-                    </select>
+        <!-- Textarea -->
+        <div class="row px-5 input-type">
+            <div class="col-sm-6">
+                <h6 class="input-type-header">TextArea</h6>
+                <!-- Textarea -->
+                <textarea class="form-control" rows="10" placeholder="Add message here" aria-label="With textarea"></textarea>
+                <button class="btn btn-success submit">Submit</button>
+            </div>
+        </div>
+        <!-- Select -->
+        <div class="row px-5 input-type">
+            <div class="col-sm-6">
+                <h6 class="input-type-header">Select</h6>
+                <!-- Select -->
+                <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Topping 1</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01" placeholder="Pick one option.">
+                            <option selected value="0">Choose...</option>
+                            <option value="1">Bacon</option>
+                            <option value="2">Mushrooms</option>
+                            <option value="3">Tomatoe</option>
+                            <option value="4">Cheese</option>
+                        </select>
+
             </div>
             <div class="input-group mb-3">
                     <div class="input-group-prepend">
@@ -349,97 +332,24 @@
             </div>
             <button class="btn btn-success submit">Submit</button>
         </div>
-        <div class="row input-type">
-            <h6 class="input-type-header">Get File</h6>
-            <div class="input-group mb-3">
-                <div class="input-group-append">
-                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                </div>
-                <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                </div>
-            </div>
-            <button class="btn btn-success submit">Submit</button>
         </div>
-
-
-
-
-
-        <!-- Modals -->
-        <div id="modal" class="row">
-            <h1 class="section-header">Modals</h1>
-        </div>
-        <div class="col-4">
-            <button type="button" class="btn btn-primary" data-target="#exampleModal" data-toggle="modal">Activate Modal</button>
-        </div>
-        <div class="modal fade" id="exampleModal">
-
-        <!-- 
-            Modal Dialog
-            Modal Content
-            Modal Header > Modal Title & Close Button
-            Modal Body
-            Modal Footer
-         -->
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+        <!-- File Input -->
+        <div class="row px-5 input-type">
+            <div class="col-sm-6">
+                <h6 class="input-type-header">Get File</h6>
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
                     </div>
-                    <div class="modal-body">
-                        <p>This is a Modal's body. Information goes in here.</p>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>   
-                    </div>
-
                 </div>
+                <button class="btn btn-success submit">Submit</button>
             </div>
         </div>
-
-
-
-
-        <!-- Collapse -->
-        <div class="row">
-            <h1 class="sectin-header">Collapse</h1>
-        </div>
-        <button class="btn btn-warning" data-toggle="collapse" href="#collapseExample" role="button" >Collapse</button>
-        <div class="collapse" id="collapseExample">
-            <p>This is inside the collapsed section.</p>
-        </div>
-
-        <!-- Dropdowns -->
-        <div class="row">
-            <h1 class="sectin-header">Dropdown</h1>
-        </div>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown button
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-        </div>
-
-
-
-
   </div>
-
-<!-- 
-    <div class="container-sm">100% wide until small breakpoint ≥ 576px</div>
-    <div class="container-md">100% wide until medium breakpoint ≥ 768px</div>
-    <div class="container-lg">100% wide until large breakpoint ≥ 992px</div>
-    <div class="container-xl">100% wide until extra large breakpoint ≥ 1200px</div> -->
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
